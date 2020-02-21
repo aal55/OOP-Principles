@@ -1,8 +1,8 @@
-function encap() {
-    //This variable "hereOnly" can only be accessed inside the function
-    var hereOnly = 0;
+var x = "unchanged";
+function encap(placeholder) {
+    var x = placeholder;
+    return x; //Should return whatever placeholder is
 }
+console.log(x); //Should still print out "unchanged"
 
-//"hereOnly" cannot be accessed here. There will be an error thrown
-console.log(hereOnly);
 module.exports = encap;
