@@ -9,5 +9,5 @@ class Tesla extends Car {
     }
 }
 let ev = new Tesla();
-console.log(ev.refuel());
+console.log(ev.refuel()); //Will print 'Tesla is charged' instead of 'Fuel tank is now full'
 module.exports = {Car: Car, Tesla: Tesla};
