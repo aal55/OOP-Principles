@@ -11,3 +11,4 @@ class Dog extends Animal {
 let doggo = new Dog();
 console.log('Doggo ' + doggo.move(5)); //Dog inherits move method from the Animal class
 console.log(doggo.bark());
+module.exports = {Animal: Animal, Dog: Dog};
