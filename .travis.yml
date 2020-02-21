@@ -9,6 +9,8 @@ cache:
     - node_modules
 before_install:
   - npm update
+before_script:
+  - chmod 0555 ./node_modules/.bin/travis
 install:
   - npm install
 script:
